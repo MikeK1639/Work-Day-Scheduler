@@ -1,9 +1,9 @@
 # Work-Day-Scheduler
 This is my Challenge 5 assignment for the coding boot camp. It is a scheduler to help you keep up with your daily tasks.
 
-Usage: The use of this is that you can enter in your day to day schedule and track teh events in real time.
+Usage: The use of this is that you can enter in your day to day schedule and track the events in real time.
 
-Credits: The only collaboration I had was from my wonderfull classmates.
+Credits: The only collaboration I had was from my wonderful classmates.
 
 License MIT License
 
@@ -17,3 +17,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  
  
  https://github.com/MikeK1639/Work-Day-Scheduler
+https://mikek1639.github.io/Work-Day-Scheduler/
+
+
+![_C__Users_drumm_Documents_UCF_homework_Work-Day-Scheduler_Work-Day-Scheduler_index html](https://user-images.githubusercontent.com/126822125/230520948-10470b72-93b2-440b-9961-ec244e47587d.png)

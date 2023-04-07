@@ -1,41 +1,46 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+// This is the function to wrap the JS to apply to the DOM
 $(function () {
 var saveButton = $('.saveBtn'); 
-var hour = $('#currentDay');
+// Save button function
 
 function displayTime() {
-var rightNow = dayjs().format('MM DD, YYYY'); 
-timeDisplay.text(rightNow)
+var rightNow = dayjs().format('MM DD, YYYY hh:mm:ss'); 
+$('#currentDay').text(rightNow) 
+console.log(rightNow);
+
+// This is the function that runs the clock and date for the header
 
 
 }
 
 
-const currentHour = new Date().getHours();
-const timeBlocks = document.querySelectorAll('.timeBlock'); 
+$(".time-block").each(function(){
+  console.log("Hello");
+  const hour = parseInt( $(this).attr("id").split('-')[1]);
+  var currentHour = dayjs().hour()
+  if (hour < currentHour) {
+  $(this).addClass('future')
+  
+  } else if (hour === currentHour) {
+    $(this).addClass('present') 
+  } else {
+    $(this).addClass('future'); 
+  
+  
+  }
+  })
 
-timeBlocks.forEach(timeBlock.id.split('-')[1]) => {
-  const hour = parseInt(timeBlock.id.split('-')[1]);
+// This is the if then statement for the time-blocks to change with the past,present, and future time cycles.
+ 
 
-if (hour < currentHour) {
-timeBlock.classlist.add('past')
 
-} else if (hour === currentHour) {
-timeBlocks.classlist.add('present') 
-} else {
-timeBlock.classlist.add('future'); 
-$(this).removeClass('past')
-$(this).removeClass('present')
+ 
 
-}
-}
 
 saveButton.click()
 
 
-displayTime()
+
 setInterval(displayTime,1000);
 
 }
